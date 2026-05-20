@@ -1,2 +1,10 @@
 # AI Lab 15
-Integration and Deployment of a Multi-Model Agricultural Intelligence System
+Artificial Intelligence Lab (CSL 411) 
+
+Student Name: Hasan Zahid 
+
+Enrollment #: 01-131232-028 
+
+Teacher: Engr. Saad Mazhar Khan 
+
+Dept of SE, BUIC
