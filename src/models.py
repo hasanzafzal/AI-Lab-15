@@ -1,18 +1,3 @@
-"""
-models.py — Algorithmic Core for the Smart Agriculture DSS.
-
-Implements, trains, evaluates, and serializes three ML models:
-    1. Decision Tree Classifier   → Crop recommendation
-    2. K-Means Clustering          → Soil profile segmentation
-    3. Linear Regression           → Crop yield prediction
-
-Each model includes:
-    - Training with hyperparameter configuration
-    - Comprehensive evaluation metrics
-    - Visualization generation (saved to results/)
-    - Model serialization via joblib
-"""
-
 import os
 import numpy as np
 import pandas as pd
@@ -49,9 +34,7 @@ plt.style.use("seaborn-v0_8-darkgrid")
 sns.set_palette("husl")
 
 
-# ══════════════════════════════════════════════════
 # MODULE 1: Decision Tree Classifier
-# ══════════════════════════════════════════════════
 def train_decision_tree(df: pd.DataFrame, test_size: float = 0.2,
                         random_state: int = 42, max_depth: int = 10) -> dict:
     """
@@ -181,9 +164,7 @@ def train_decision_tree(df: pd.DataFrame, test_size: float = 0.2,
     }
 
 
-# ══════════════════════════════════════════════════
 # MODULE 2: K-Means Clustering (Soil Segmentation)
-# ══════════════════════════════════════════════════
 def train_kmeans_clustering(df: pd.DataFrame, n_clusters: int = 5,
                             random_state: int = 42) -> dict:
     """
@@ -382,9 +363,7 @@ def generate_cluster_guidance(profiles: pd.DataFrame) -> dict:
     return guidance
 
 
-# ══════════════════════════════════════════════════
 # MODULE 3: Linear Regression (Yield Prediction)
-# ══════════════════════════════════════════════════
 def train_linear_regression(df: pd.DataFrame, test_size: float = 0.2,
                             random_state: int = 42) -> dict:
     """
@@ -534,9 +513,7 @@ def train_linear_regression(df: pd.DataFrame, test_size: float = 0.2,
     }
 
 
-# ══════════════════════════════════════════════════
 # FULL PIPELINE
-# ══════════════════════════════════════════════════
 def run_model_pipeline():
     """
     Execute the complete model training pipeline:
@@ -583,9 +560,7 @@ def run_model_pipeline():
     return dt_results, km_results, lr_results
 
 
-# ──────────────────────────────────────────────
 # Entry Point
-# ──────────────────────────────────────────────
 if __name__ == "__main__":
     dt_results, km_results, lr_results = run_model_pipeline()
     print("\n✅ All models trained, evaluated, and serialized successfully.")
