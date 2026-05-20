@@ -1,0 +1,58 @@
+{
+  "N": {
+    "q1": 21.0,
+    "q3": 84.25,
+    "iqr": 63.25,
+    "lower_bound": -73.875,
+    "upper_bound": 179.125,
+    "outliers_capped": 0
+  },
+  "P": {
+    "q1": 28.0,
+    "q3": 68.0,
+    "iqr": 40.0,
+    "lower_bound": -32.0,
+    "upper_bound": 128.0,
+    "outliers_capped": 138
+  },
+  "K": {
+    "q1": 20.0,
+    "q3": 49.0,
+    "iqr": 29.0,
+    "lower_bound": -23.5,
+    "upper_bound": 92.5,
+    "outliers_capped": 200
+  },
+  "ph": {
+    "q1": 5.9717,
+    "q3": 6.9236,
+    "iqr": 0.9519,
+    "lower_bound": 4.5438,
+    "upper_bound": 8.3516,
+    "outliers_capped": 57
+  },
+  "temperature": {
+    "q1": 22.7694,
+    "q3": 28.5617,
+    "iqr": 5.7923,
+    "lower_bound": 14.081,
+    "upper_bound": 37.2501,
+    "outliers_capped": 86
+  },
+  "humidity": {
+    "q1": 60.262,
+    "q3": 89.9488,
+    "iqr": 29.6868,
+    "lower_bound": 15.7317,
+    "upper_bound": 134.479,
+    "outliers_capped": 30
+  },
+  "rainfall": {
+    "q1": 64.5517,
+    "q3": 124.2675,
+    "iqr": 59.7158,
+    "lower_bound": -25.022,
+    "upper_bound": 213.8412,
+    "outliers_capped": 100
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "total_samples": 2200,
+  "features": [
+    "N",
+    "P",
+    "K",
+    "ph",
+    "temperature",
+    "humidity",
+    "rainfall"
+  ],
+  "num_crops": 22,
+  "crop_list": [
+    "apple",
+    "banana",
+    "blackgram",
+    "chickpea",
+    "coconut",
+    "coffee",
+    "cotton",
+    "grapes",
+    "jute",
+    "kidneybeans",
+    "lentil",
+    "maize",
+    "mango",
+    "mothbeans",
+    "mungbean",
+    "muskmelon",
+    "orange",
+    "papaya",
+    "pigeonpeas",
+    "pomegranate",
+    "rice",
+    "watermelon"
+  ],
+  "yield_stats": {
+    "mean": 7.5426,
+    "std": 7.301,
+    "min": 0.49,
+    "max": 33.25
+  },
+  "preprocessing_steps": [
+    "Missing value imputation (median/mode)",
+    "Outlier treatment (IQR capping, factor=1.5)",
+    "Synthetic yield generation (agronomic model)",
+    "Feature scaling (StandardScaler)",
+    "Label encoding (LabelEncoder)"
+  ]
+}

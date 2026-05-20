@@ -1,0 +1,26 @@
+{
+  "model": "LinearRegression",
+  "task": "Crop Yield Prediction",
+  "train_samples": 1760,
+  "test_samples": 440,
+  "rmse": 5.1336,
+  "mae": 3.9068,
+  "r2_test": 0.5014,
+  "r2_train": 0.5003,
+  "coefficients": {
+    "N": 0.038042,
+    "P": -0.028554,
+    "K": 0.134637,
+    "ph": -1.92371,
+    "temperature": 0.14339,
+    "humidity": 0.129759,
+    "rainfall": -0.021119
+  },
+  "intercept": 3.6416,
+  "residual_stats": {
+    "mean": -0.1992,
+    "std": 5.1297,
+    "min": -8.6626,
+    "max": 20.8616
+  }
+}

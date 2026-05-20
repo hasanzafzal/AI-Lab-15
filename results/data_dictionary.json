@@ -1,0 +1,106 @@
+{
+  "N": {
+    "description": "Ratio of Nitrogen content in soil (kg/ha)",
+    "dtype": "int64",
+    "null_count": 0,
+    "unique_count": 137,
+    "min": 0.0,
+    "max": 140.0,
+    "mean": 50.5518,
+    "std": 36.9173,
+    "median": 37.0,
+    "q25": 21.0,
+    "q75": 84.25
+  },
+  "P": {
+    "description": "Ratio of Phosphorus content in soil (kg/ha)",
+    "dtype": "int64",
+    "null_count": 0,
+    "unique_count": 117,
+    "min": 5.0,
+    "max": 145.0,
+    "mean": 53.3627,
+    "std": 32.9859,
+    "median": 51.0,
+    "q25": 28.0,
+    "q75": 68.0
+  },
+  "K": {
+    "description": "Ratio of Potassium content in soil (kg/ha)",
+    "dtype": "int64",
+    "null_count": 0,
+    "unique_count": 73,
+    "min": 5.0,
+    "max": 205.0,
+    "mean": 48.1491,
+    "std": 50.6479,
+    "median": 32.0,
+    "q25": 20.0,
+    "q75": 49.0
+  },
+  "temperature": {
+    "description": "Average temperature during the growing season (\u00b0C)",
+    "dtype": "float64",
+    "null_count": 0,
+    "unique_count": 2200,
+    "min": 8.825674745,
+    "max": 43.67549305,
+    "mean": 25.6162,
+    "std": 5.0637,
+    "median": 25.5987,
+    "q25": 22.7694,
+    "q75": 28.5617
+  },
+  "humidity": {
+    "description": "Relative humidity (%)",
+    "dtype": "float64",
+    "null_count": 0,
+    "unique_count": 2200,
+    "min": 14.25803981,
+    "max": 99.98187601,
+    "mean": 71.4818,
+    "std": 22.2638,
+    "median": 80.4731,
+    "q25": 60.262,
+    "q75": 89.9488
+  },
+  "ph": {
+    "description": "Soil pH value (acidity/alkalinity measure)",
+    "dtype": "float64",
+    "null_count": 0,
+    "unique_count": 2200,
+    "min": 3.504752314,
+    "max": 9.93509073,
+    "mean": 6.4695,
+    "std": 0.7739,
+    "median": 6.425,
+    "q25": 5.9717,
+    "q75": 6.9236
+  },
+  "rainfall": {
+    "description": "Annual rainfall (mm)",
+    "dtype": "float64",
+    "null_count": 0,
+    "unique_count": 2200,
+    "min": 20.21126747,
+    "max": 298.5601175,
+    "mean": 103.4637,
+    "std": 54.9584,
+    "median": 94.8676,
+    "q25": 64.5517,
+    "q75": 124.2675
+  },
+  "label": {
+    "description": "Target crop type for recommendation (22 classes)",
+    "dtype": "str",
+    "null_count": 0,
+    "unique_count": 22,
+    "sample_values": {
+      "rice": 100,
+      "maize": 100,
+      "chickpea": 100,
+      "kidneybeans": 100,
+      "pigeonpeas": 100
+    }
+  }
+}
